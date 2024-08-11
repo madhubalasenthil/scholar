@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.menu {
+    width: 100%;
+    background-color: blueviolet;
+    height: 100vh;
+    position: relative;
+    border-radius: 0px 0px 80px 0px;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 20px;
+}
+nav .logo {
+    border-right: 1px solid white;
+    padding-right: 22px;
+}
+.search input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 6px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+
+}
+.search input::placeholder {
+    color: white;
+}
+.right #bar {
+    display: none;
+}
+.left{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+.right {
+    width: 45%;
+    align-items: center;
+}
+.right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right ul li {
+    list-style: none;
+    padding:  5px 10px;
+    transition: all 0.3s;
+}
+.right ul li:hover {
+    background-color: rgba(206, 201, 201, 0.3);
+    border-radius: 20px;
+}
+.right ul li a {
+    text-decoration: none;
+}
+.search {
+    position: relative;
+}
+.search i {
+    position: absolute;
+    left: 85%;
+    top: 23%;
+}
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .right ul{
+        display: none;
+    }
+    .right #bar {
+        display: block;
+        position: relative;
+        left: 85%;
+        font-size: 1.7rem;
+    }
+}
+/* Responsive for mobile */
+@media screen and (max-width:576px){
+    .search {
+        display: none;
+    }
+    
+}
+.menu .box {
+    width: 74%;
+    height: 75%;
+   background-image: url(./pexels-julia-m-cameron-4144923.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: 20%;
+   margin-top: 2%;
+   background-color: rgba(36, 35, 35, 0.8);
+   background-blend-mode: soft-light;
+   border-radius: 10px;
+   padding: 50px;
+   
+}
+.arrow {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+.arrow i {
+    border: 1px solid white;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: rgb(148, 72, 219);
+}
+.box #head {
+    width: 13%;
+    background-color: blueviolet;
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+   
+}
+.box #para {
+    width: 70%;
+    color: white;
+}
+.box .btns {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .btns p {
+    background-color: white;
+    color: blueviolet;
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 20px;
+}
+.box .btns i {
+    color: blueviolet;
+    background-color: white;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+.box .btns h5 {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+/* Responsive for Desktop */
+@media screen and (max-width:1200px) {
+    .menu {
+        width: 100%;
+        height: 70vh;
+    }
+    .menu .box {
+        height: 50vh;
+    }
+}
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .menu .box {
+        margin-left: 13%;
+        width: 80%;
+    }
+    .box #head {
+        width: 15%;
+    }
+    .box .btns {
+        width: 47%;
+    }
+    .box .btns p {
+        width: 35%;
+    }
+}
+/* Responsive for mobile */
+@media screen and (max-width:576px) {
+    .menu {
+        height: 100vh;
+    }
+    .menu .box {
+        height: 80vh;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .box h1 {
+        font-size: 1.4rem;
+    }
+    .arrow {
+        display: none;
+    }
+    .box #head {
+        width: 65%;
+    }
+    .box #para {
+        width: 90%;
+    }
+    .box .btns {
+     display: none;
+    }
+   
+
+}
+.menu2 {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    margin-top: 8%;
+    position: relative;
+}
+.menu2 .box {
+    width: 270px;
+    height: 250px;
+    background-color: rgb(207, 201, 201);
+    border-radius: 20px;
+    color: black;
+    padding: 40px;
+}
+.menu2 .box i {
+    color: white;
+    background-color: blueviolet;
+    position: absolute;
+    font-size: 2.5rem;
+    padding: 40px;
+    border-radius: 50%;
+    top: 3%;
+}
+.box #ico1 {
+    margin-left: 80px;
+}
+.box #ico2 {
+    margin-left: 80px;
+}
+.box #ico3 {
+    margin-left: 80px;
+}
+.box h2 {
+    color: black;
+    font-size: 1.2rem;
+}
+.box p {
+    color: black;
+    font-size: 0.9rem;
+}
+.box button {
+    border: none;
+    color: blueviolet;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .menu2 {
+        padding: 5px;
+    }
+    .box #ico1 {
+        margin-left: 40px;
+    }
+    .box #ico2 {
+        margin-left: 40px;
+    }
+    .box #ico3 {
+        margin-left: 40px;
+    }
+    .menu2 .box i {
+        top: 0%;
+        padding: 33px 35px;
+    }
+}
+/* Responsive for mobile */
+@media screen and (max-width:576px) {
+    .menu2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu2 .box {
+        width: 80%;
+        margin-top: 8%;
+    }
+    .box #ico1 {
+        margin-right: 400px;
+    }
+    .box #ico2 {
+        margin-right: 400px;
+        margin-top: 250px;
+    }
+    .box #ico3 {
+        margin-right: 400px;
+        margin-top: 550px;
+    }
+}
+.menu3 {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    
+}
+.menu3 .left1 {
+    width: 40%;
+    height: 450px;
+    background-color: blueviolet;
+    position: absolute;
+    z-index: 2;
+    border-radius: 30px;
+    left: 10%;
+    padding: 20px;
+}
+.menu3 .right {
+    width: 50%;
+    height: 350px;
+    background-color: rgb(119, 116, 116,.3);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 60px;
+    padding-left: 40px;
+   padding: 50px;
+}
+.menu3 .right p {
+    color: blueviolet;
+}
+.menu3 .right h2 {
+    color: black;
+}
+
+.menu3 .right h5 {
+    color: black;
+    font-weight: 500;
+}
+
+.menu3 .right button {
+    border: none;
+    color: blueviolet;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.menu3 .left1 .line {
+    display: flex;
+    width: 90%;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+}
+.menu3 .left1 .line p {
+    color: black;
+}
+.menu3 .left1 .line i {
+    color: white;
+    background-color: blueviolet;
+    padding: 5px;
+    border-radius: 50%;
+}
+.menu3 .left1 .line .par h4 {
+    color: blueviolet;
+    padding: 5px;
+}
+.menu3 .left1 .line #minus {
+    height: 25px;
+}
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .menu3 .left1 {
+        width: 45%;
+        left: 5%;
+    }
+    
+}
+/* Responsive for mobile */
+@media screen and (max-width:576px) {
+    .menu3 {
+        width: 100%;
+    }
+    .menu3 .right {
+        top: 550px;
+        width: 100%;
+        height: 440px;
+    }
+    .menu3 .left1 {
+        width: 90%;
+        left: 5%;
+    }  
+    .menu3 .left1 .line {
+        width: 90%;
+    } 
+    .menu3 .left1 .line p {
+        font-size: 0.7rem;
+    }
+}
+.menu4 {
+    margin-top: 500px;
+    width: 100%;
+}
+.menu4 h2 {
+    color: blueviolet;
+    text-align: center;
+    font-size: 1rem;
+}
+.menu4 h4 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+.menu4 ul {
+    display: flex;
+    text-align: center;
+    background-color: rgb(197, 194, 194);
+    width: 40%;
+    margin: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 30%;
+}
+.menu4 ul  li {
+    list-style: none;
+    color: black;
+}
+.boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    column-gap: 25px;
+    padding: 50px;
+}
+.boxes .box {
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(201, 195, 195,.3);
+}
+.boxes .box img {
+    height: 250px;
+    width: 370px;
+    border-radius: 20px;
+}
+.boxes .box h6 {
+    color: black;
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+.boxes .box p {
+    color: blueviolet;
+    padding: 15px;
+}
+/* Responsive for Desktop */
+@media screen and (max-width:1200px) {
+    .boxes {
+        padding: 20px;
+    }
+}
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .boxes {
+        grid-template-columns: repeat(2,1fr);
+        padding: 40px;
+        column-gap: 40px;
+    }
+    .boxes .box img {
+        width: 440px;
+    }
+    
+}
+/* Responsive for mobiles */
+@media screen and (max-width:576px) {
+    .menu4 {
+        margin-top: 980px;
+    }
+    .menu4 ul {
+        margin-left: 9%;
+        width: 80%;
+    }
+    .menu4 ul li {
+        font-size: 0.6rem;
+    }
+    .boxes {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    .boxes .box img {
+        width: 330px;
+    }
+}
